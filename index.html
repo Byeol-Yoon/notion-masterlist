@@ -12,12 +12,17 @@
     box-sizing: border-box;
   }
 
+  html,
   body {
     margin: 0;
+    padding: 0;
+    background: transparent !important;
+  }
+
+  body {
     padding: 12px;
     font-family: -apple-system, BlinkMacSystemFont,
       "Segoe UI", sans-serif;
-    background: transparent;
   }
 
   .collection {
@@ -58,41 +63,79 @@
     outline-offset: 3px;
   }
 
-  /* HYPNOS */
+  /* LIGHT MODE */
+
   .hypnos {
     background: #E8DDEB;
     color: #674D70;
   }
 
-  /* SIRENO */
   .sireno {
     background: #DCE6EC;
     color: #405967;
   }
 
-  /* IBASHO */
   .ibasho {
     background: #E4E9DB;
     color: #53613D;
   }
 
-  /* HOGWARTS */
   .hogwarts {
     background: #EFE5D9;
     color: #70563F;
   }
 
-  /* CYBERPUNK */
   .cyberpunk {
     background: #DDE3E9;
     color: #46596D;
   }
 
-  /* CABALLEROS */
   .caballeros {
     background: #EBDDE0;
     color: #704650;
   }
+
+  /* DARK MODE */
+
+  @media (prefers-color-scheme: dark) {
+
+    .hypnos {
+      background: #403448;
+      color: #E8D9EF;
+    }
+
+    .sireno {
+      background: #30404A;
+      color: #D5E4ED;
+    }
+
+    .ibasho {
+      background: #394333;
+      color: #DFE9D5;
+    }
+
+    .hogwarts {
+      background: #493D32;
+      color: #F0E0CC;
+    }
+
+    .cyberpunk {
+      background: #35414D;
+      color: #DCE6F0;
+    }
+
+    .caballeros {
+      background: #49343B;
+      color: #EFD9DF;
+    }
+
+    .chip:hover {
+      filter: brightness(1.2);
+      box-shadow: 0 5px 14px rgba(0,0,0,0.25);
+    }
+  }
+
+  /* RESPONSIVE */
 
   @media (max-width: 480px) {
     .collection {
@@ -104,6 +147,7 @@
       font-size: 12px;
     }
   }
+
 </style>
 </head>
 
