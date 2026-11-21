@@ -25,12 +25,16 @@
       "Segoe UI", sans-serif;
   }
 
+  /* COLLECTION */
+
   .collection {
     display: flex;
     flex-wrap: wrap;
     gap: 12px;
     align-items: center;
   }
+
+  /* GENERAL CHIP STYLE */
 
   .chip {
     display: inline-flex;
@@ -65,41 +69,41 @@
 
   /* LIGHT MODE */
 
+  /* HYPNOS */
   .hypnos {
     background: #E8DDEB;
     color: #674D70;
   }
 
-  .sireno {
+  /* MERMAID TALES */
+  .mermaid {
     background: #DCE6EC;
     color: #405967;
   }
 
+  /* IBASHO */
   .ibasho {
     background: #E4E9DB;
     color: #53613D;
   }
 
-  .hogwarts {
+  /* WIZARDING WORLD */
+  .wizarding {
     background: #EFE5D9;
     color: #70563F;
   }
 
-  .cyberpunk {
+  /* IDOLVERSE */
+  .idolverse {
     background: #DDE3E9;
     color: #46596D;
   }
- 
- .cyberpunk {
-  display: none;
-}
 
-  .caballeros {
+  /* MISCELLANEA */
+  .miscellanea {
     background: #EBDDE0;
     color: #704650;
   }
-
-
 
   /* DARK MODE */
 
@@ -110,7 +114,7 @@
       color: #E8D9EF;
     }
 
-    .sireno {
+    .mermaid {
       background: #30404A;
       color: #D5E4ED;
     }
@@ -120,17 +124,17 @@
       color: #DFE9D5;
     }
 
-    .hogwarts {
+    .wizarding {
       background: #493D32;
       color: #F0E0CC;
     }
 
-    .cyberpunk {
+    .idolverse {
       background: #35414D;
       color: #DCE6F0;
     }
 
-    .caballeros {
+    .miscellanea {
       background: #49343B;
       color: #EFD9DF;
     }
@@ -144,6 +148,7 @@
   /* RESPONSIVE */
 
   @media (max-width: 480px) {
+
     .collection {
       gap: 9px;
     }
@@ -161,41 +166,59 @@
 
 <div class="collection">
 
+  <!-- HYPNOS -->
   <a class="chip hypnos"
-     href="PEGAR_ENLACE_NOTION_HYPNOS"
-     target="_blank">
+     href="PEGAR_ENLACE_HYPNOS"
+     target="_blank"
+     rel="noopener noreferrer">
     <span class="icon">☾</span>
     Hypnos
   </a>
 
-  <a class="chip sireno"
-     href="PEGAR_ENLACE_NOTION_SIRENO"
-     target="_blank">
+  <!-- MERMAID TALES -->
+  <a class="chip mermaid"
+     href="PEGAR_ENLACE_MERMAID_TALES"
+     target="_blank"
+     rel="noopener noreferrer">
     <span class="icon">🐚</span>
     Mermaid Tales
   </a>
 
+  <!-- IBASHO -->
   <a class="chip ibasho"
-     href="PEGAR_ENLACE_NOTION_IBASHO"
-     target="_blank">
+     href="PEGAR_ENLACE_IBASHO"
+     target="_blank"
+     rel="noopener noreferrer">
     <span class="icon">⌂</span>
     Ibasho
   </a>
 
-  <a class="chip hogwarts"
-     href="PEGAR_ENLACE_NOTION_HOGWARTS"
-     target="_blank">
+  <!-- WIZARDING WORLD -->
+  <a class="chip wizarding"
+     href="PEGAR_ENLACE_WIZARDING_WORLD"
+     target="_blank"
+     rel="noopener noreferrer">
     <span class="icon">✧</span>
     Wizarding World
   </a>
 
-   <a class="chip caballeros"
-     href="PEGAR_ENLACE_NOTION_HOGWARTS"
-     target="_blank">
-    <span class="icon">☕︎</span>
-    Lemon balm tea
+  <!-- IDOLVERSE -->
+  <a class="chip idolverse"
+     href="PEGAR_ENLACE_IDOLVERSE"
+     target="_blank"
+     rel="noopener noreferrer">
+    <span class="icon">♫</span>
+    Idolverse
   </a>
 
+  <!-- MISCELLANEA -->
+  <a class="chip miscellanea"
+     href="PEGAR_ENLACE_MISCELLANEA"
+     target="_blank"
+     rel="noopener noreferrer">
+    <span class="icon">✎</span>
+    Miscelánea
+  </a>
 
 </div>
 
